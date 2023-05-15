@@ -13,10 +13,10 @@ import { FaLinkedinIn } from "react-icons/fa";
 function Home2() {
   const videoId = "aC0_OyRSLig";
 
-  const opts = {
-    height: "360",
-    width: "640",
-  };
+  // const opts = {
+  //   height: "360",
+  //   width: "640",
+  // };
 
   return (
     <Container fluid className="home-about-section" id="about">
@@ -75,14 +75,8 @@ function Home2() {
         <Container>
           <Row>
             <Col md={12}>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  paddingBottom: "40px",
-                }}
-              >
-                <YouTube videoId={videoId} opts={opts} />
+              <div className="video-container">
+                <YouTube videoId={videoId} />
               </div>
             </Col>
           </Row>
