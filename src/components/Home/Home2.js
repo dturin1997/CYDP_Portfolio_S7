@@ -73,8 +73,8 @@ function Home2() {
           </Col>
         </Row>
         <Container>
-          <Row>
-            <Col md={12}>
+          <Row className="justify-content-md-center">
+            <Col md={8}>
               <div className="video-container">
                 <YouTube videoId={videoId} />
               </div>
