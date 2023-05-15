@@ -1,4 +1,5 @@
 import React from "react";
+import YouTube from "react-youtube";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
@@ -10,6 +11,13 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
+  const videoId = "aC0_OyRSLig";
+
+  const opts = {
+    height: "360",
+    width: "640",
+  };
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -64,6 +72,21 @@ function Home2() {
             </Tilt>
           </Col>
         </Row>
+        <Container>
+          <Row>
+            <Col md={12}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  paddingBottom: "40px",
+                }}
+              >
+                <YouTube videoId={videoId} opts={opts} />
+              </div>
+            </Col>
+          </Row>
+        </Container>
         <Row>
           <Col md={12} className="home-about-social">
             <h1>ENCUENTRAME EN</h1>

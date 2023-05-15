@@ -1,4 +1,5 @@
 import React from "react";
+import YouTube from "react-youtube";
 import { Container, Row, Col } from "react-bootstrap";
 import CvImage from "../../Assets/Dario_Turin_cv1.jpg";
 import Particle from "../Particle";
@@ -6,10 +7,18 @@ import Home2 from "./Home2";
 import Type from "./Type";
 
 function Home() {
+  const videoId = "aC0_OyRSLig";
+
+  const opts = {
+    height: "360",
+    width: "640",
+  };
+
   return (
     <section>
+      <Particle />
       <Container fluid className="home-section" id="home">
-        <Particle />
+        {/* <Particle /> */}
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
@@ -38,7 +47,7 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col md={5} style={{ paddingBottom: 10 }}>
               <img
                 src={CvImage}
                 alt="home pic"
@@ -49,6 +58,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
+
       <Home2 />
     </section>
   );
