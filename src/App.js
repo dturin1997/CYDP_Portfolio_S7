@@ -11,6 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/Footer";
 import NavBar from "./components/Navbar";
 import Prueba from "./components/Prueba";
+import Profile from "./components/Profile/Profile";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -29,6 +30,7 @@ function App() {
         {/* <ScrollToTop /> */}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/test" element={<Prueba />} />
         </Routes>
         <Footer />
