@@ -10,8 +10,9 @@ import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/Footer";
 import NavBar from "./components/Navbar";
-import Prueba from "./components/Prueba";
 import Profile from "./components/Profile/Profile";
+import Projects from "./components/Projects/Projects";
+import Prueba from "./components/Prueba";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -31,6 +32,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/test" element={<Prueba />} />
         </Routes>
         <Footer />
