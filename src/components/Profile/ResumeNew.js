@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/DarioTurin-CV-5-2023.pdf";
+import pdf from "../../Assets/../Assets/DarioTurin-11vEs1-2023.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://raw.githubusercontent.com/dturin1997/CYDP_Portfolio_S7/master/src/Assets/DarioTurin-CV-5-2023.pdf";
+  "https://raw.githubusercontent.com/dturin1997/CYDP_Portfolio_S7/master/src/Assets/DarioTurin-11vEs1-2023.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
